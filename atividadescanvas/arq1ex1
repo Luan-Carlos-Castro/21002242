@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main()
+{
+    float a, b,c;
+    printf ("digite 3 numeros: \n");
+    scanf (%f %f %f, &a &b &c);
+    printf ("numeros digitados de forma contraria aos digitados são: %f, %f,%f",c b a);
+
+    return 0;
+}
