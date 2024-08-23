@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float n1, n10, n50, n100, t;
+    printf ("informe a quantidade de notas de 1 real:");
+    scanf ("%f", &n1);
+    printf ("informe a quantidade de notas de 10 real:");
+    scanf ("%f", &n10);
+    printf ("informe a quantidade de notas de 50 real:");
+    scanf ("%f", &n50);
+    printf ("informe a quantidade de notas de 100 real:");
+    scanf ("%f", &n100);
+    t = (n1)+(n10*10)+(n50*50)+(n100*100);
+    printf ("o total e:%f",t);
+    return (0);
+}
