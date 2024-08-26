@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+	float p, v, t, m, g;
+	printf ("informe a pressao: ");
+	scanf ("%f",&p);
+	printf ("informe o volume: ");
+	scanf ("%f",&v);
+    printf ("informe a temperatura: ");
+    scanf ("%f",&t);
+    m = (p*v) / (0.37*(t+460));
+    printf ("o valor da massa e %f",m);
+	return (0);
+}
