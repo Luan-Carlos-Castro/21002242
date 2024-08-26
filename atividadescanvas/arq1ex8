@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+	float pt, r, n, nt;
+	printf ("informe os seguintes valores:\no primeiro termo da pa: ");
+	scanf ("%f",&pt);
+	printf ("a razao da pa: ");
+	scanf ("%f",&r);
+	printf ("a quantidade de termos da pa: ");
+	scanf ("%f",&n);
+	nt = pt+(n-1)*r;
+	printf ("o valor do n-esimo termo da pa e: %f",nt);
+	
+	return (0);
+}
