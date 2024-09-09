@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main() {
+	float a1, a2, a3, d1, d2, d3, t;
+	char f;
+	volta:
+	printf ("quantas acoes deseja compra da acao 1? ");
+	scanf ("%f", &a1);
+	printf ("quantas acoes deseja compra da acao 2? ");
+	scanf ("%f", &a2);
+	printf ("quantas acoes deseja compra da acao 3? ");
+	scanf ("%f", &a3);
+	t = (a1 * 24.13) + (a2 * 11) + (a3 * 38.65);
+	if (t > 1000) {
+	    printf ("valor fora do orcamento \n");
+	    printf ("o valor todal do seria de: %.2f que esta acima do orcamento de 1000 reais\n",t);
+	}
+	else {
+	    d1 = ((17 / 24.13) * 100)*a1;
+	    d2 = ((35.0 / 11.0) * 100)*a2;
+	    d3 = ((25 / 38.65) *100)*a3; 
+	    printf ("o d.y da acao 1 é: %.2f \n o d.y da acao 2 é: %.2f \n o d.y da acao 3 é: %.2f \n o valor todal do aporte foi de: %.2f \n", d1, d2, d3, t);
+	}
+	printf ("deseja tentar outro orcamento? (s/n) \n");
+	scanf ("%s", &f);
+	if (f == 's') {
+	    goto volta;
+	}
+	return (0);
+}
